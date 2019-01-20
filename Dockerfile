@@ -20,3 +20,6 @@ RUN  apt-get update \
 # Install Puppeteer under /node_modules so it's available system-wide
 ADD package.json package-lock.json /
 RUN npm install
+
+#RUN groupadd -r pptruser && useradd -r -g pptruser -G audio,video pptruser
+#USER pptruser
